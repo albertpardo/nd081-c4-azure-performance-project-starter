@@ -25,7 +25,7 @@ from opencensus.ext.flask.flask_middleware import FlaskMiddleware
 
 
 # Change INSTRU_KEY with your Azure InstrumentationKey
-INSTRU_KEY = 'InstrumentationKey=d17cee61-35c3-4c6d-84e0-e3794f2c281b'
+INSTRU_KEY = 'InstrumentationKey=e9f6fb28-e93e-4c28-8037-1a1791b8fd44'
 
 # Logging
 # logger = # TODO: Setup logger
@@ -138,7 +138,7 @@ def index():
             vote = request.form['vote']
             r.incr(vote,1)
 
-            # Get current values
+            # Get current values, use logger object to log dog and cat votes
             vote1 = r.get(button1).decode('utf-8')
             properties = {'custom_dimensions': {'Cats Vote': vote1}}
             logger.warning('Cats Vote', extra=properties)
