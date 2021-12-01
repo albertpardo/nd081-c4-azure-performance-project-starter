@@ -14,7 +14,7 @@ resourceGroup=$(az group list --query "[0].name" -o tsv)
 
 
 
-resourceID=""
+resourceID="/subscriptions/d69af47e-53dd-448d-a185-9d8bc0ffb988/resourcegroups/cloud-demo/providers/microsoft.operationalinsights/workspaces/loganalytics-164786"
 
 echo "Cloud Lab resource group: $resourceGroup"
 
