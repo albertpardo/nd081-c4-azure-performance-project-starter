@@ -25,7 +25,7 @@ from opencensus.ext.flask.flask_middleware import FlaskMiddleware
 
 
 # Change INSTRU_KEY with your Azure InstrumentationKey
-INSTRU_KEY = 'InstrumentationKey=e9f6fb28-e93e-4c28-8037-1a1791b8fd44'
+INSTRU_KEY = 'InstrumentationKey=5a6b5991-aa7c-4e6d-a076-6e47383cb449'
 
 # Logging
 # logger = # TODO: Setup logger
