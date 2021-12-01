@@ -12,7 +12,9 @@ resourceGroup=$(az group list --query "[0].name" -o tsv)
 
 # For Cloud Lab users, go to the existing Log Analytics workspace --> General-> Properties --> Resource ID. Copy it and use in the command below.
 
-resourceID="/subscriptions/62d70a26-cec0-4efb-878f-bb4ba7135ee6/resourcegroups/cloud-demo/providers/microsoft.operationalinsights/workspaces/loganalytics-164333"
+
+
+resourceID=""
 
 echo "Cloud Lab resource group: $resourceGroup"
 
